@@ -1,0 +1,17 @@
+.grid-container{
+    display: grid;
+  grid-gap: 2px;
+  background-color:brown;
+  padding: 20px;
+  justify-content: center;
+}
+  
+.grid-item{
+  width: fit-content;
+    border-color:black ;
+    border:solid 1px;
+    padding: 5px;
+    text-align: center;
+    color: aqua;
+    margin-left: 2px;
+}
