@@ -1,8 +1,6 @@
 .grid-container {
   display: grid;
   background-color: rgb(243, 243, 243);
-  padding: 0px;
-  justify-content: center;
   width: 40rem;
   height: 40rem;
 }
@@ -11,6 +9,7 @@
   background-color: rgb(200, 85, 223);
   border-color: black;
   border: solid 1px rgb(65, 21, 21);
+  box-sizing: border-box;
 
 }
 
@@ -19,4 +18,5 @@
   border: solid 1px rgb(65, 21, 21);
   background-color: black;
   color: aqua;
+  box-sizing: border-box;
 }
