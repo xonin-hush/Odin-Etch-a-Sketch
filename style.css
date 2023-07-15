@@ -1,25 +1,22 @@
 .grid-container {
   display: grid;
   background-color: rgb(243, 243, 243);
-  padding: 1px;
-  grid-gap: 1px;
-  width: fit-content;
-
+  padding: 0px;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
 }
-.color{
+
+.color {
   background-color: rgb(200, 85, 223);
-  width: fit-content;
   border-color: black;
   border: solid 1px rgb(65, 21, 21);
-  padding: 10px;
+
 }
 
 .grid-item {
-  width: fit-content;
   border-color: black;
   border: solid 1px rgb(65, 21, 21);
-  padding: 10px;
   background-color: black;
   color: aqua;
-
 }
