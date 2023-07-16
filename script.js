@@ -14,7 +14,10 @@ for (let i = 0; i < (itemNum * itemNum); i++) {
     container.appendChild(gridItem)
     gridItem.addEventListener('mouseover', () => {
         gridItem.classList.remove('grid-item')
-        gridItem.classList.add('color');
+        //gridItem.classList.add('color');
+        gridItem.style.backgroundColor=randomRGB
+        container.appendChild(gridItem)
+        console.log(randomRGB())
     });
 }
 function getResolution() {
