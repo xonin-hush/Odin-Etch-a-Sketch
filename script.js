@@ -1,9 +1,11 @@
 const container = document.querySelector('#container');
-const cellSize = 40 / itemNum + "rem"
 container.classList.add('grid-container')
-let itemNum = 50
+const sizeButton = document.querySelector('#change-size')
+
+let itemNum=getResolution()
 container.style.gridTemplateColumns = `repeat(${itemNum},1fr)`;
 container.style.gridTemplateRows = `repeat(${itemNum},1fr)`;
+const cellSize = 40 / itemNum + "rem"
 for (let i = 0; i < (itemNum * itemNum); i++) {
     const gridItem = document.createElement('div')
     gridItem.classList.add('grid-item')
@@ -15,4 +17,7 @@ for (let i = 0; i < (itemNum * itemNum); i++) {
         gridItem.classList.add('color');
     });
 }
-
+function getResolution() {
+    size = prompt("Please enter number of squares on each side", 16)
+    return size;
+}
