@@ -22,7 +22,10 @@ for (let i = 0; i < (itemNum * itemNum); i++) {
 }
 function getResolution() {
     size = prompt("Please enter number of squares on each side", 16)
-    return size;
+    if(size>100){
+        alert("the max is 100")
+    reset()}
+    else    return size;
 }
 function reset() {
     history.go()
