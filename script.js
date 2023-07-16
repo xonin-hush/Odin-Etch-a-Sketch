@@ -2,7 +2,7 @@ const container = document.querySelector('#container');
 container.classList.add('grid-container')
 const sizeButton = document.querySelector('#change-size')
 
-let itemNum=getResolution() |16
+let itemNum=getResolution()
 container.style.gridTemplateColumns = `repeat(${itemNum},1fr)`;
 container.style.gridTemplateRows = `repeat(${itemNum},1fr)`;
 const cellSize = 40 / itemNum + "rem"
@@ -20,4 +20,7 @@ for (let i = 0; i < (itemNum * itemNum); i++) {
 function getResolution() {
     size = prompt("Please enter number of squares on each side", 16)
     return size;
+}
+function reset(){
+    history.go()
 }
