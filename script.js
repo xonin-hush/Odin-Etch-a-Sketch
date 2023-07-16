@@ -2,7 +2,7 @@ const container = document.querySelector('#container');
 container.classList.add('grid-container')
 const sizeButton = document.querySelector('#change-size')
 
-let itemNum=getResolution()
+let itemNum=getResolution() |16
 container.style.gridTemplateColumns = `repeat(${itemNum},1fr)`;
 container.style.gridTemplateRows = `repeat(${itemNum},1fr)`;
 const cellSize = 40 / itemNum + "rem"
