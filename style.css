@@ -13,18 +13,6 @@ body {
   align-items: center;
 }
 
-#change-size {
-  background-color: rgb(253, 193, 82);
-  color: #1f2937;
-  border-color: rgb(253, 193, 82);
-  border-radius: 10px;
-  border-style: solid;
-  width: 100px;
-  height: 35px;
-  justify-self: center;
-  margin-bottom: 20px;
-}
-
 .top {
   display: flex;
   justify-content:space-between;
@@ -70,8 +58,7 @@ ul {
   margin-bottom: 8px;
   margin-top: 40px;
 }
-
-.color {
+.color-sky-blue {
   background-color: skyblue;
   border-color: black;
   border: solid 1px rgb(65, 21, 21);
@@ -80,7 +67,7 @@ ul {
 
 }
 
-.grid-item {
+.color-dark-blue {
   border-color: black;
   border: solid 1px rgb(65, 21, 21);
   background-color: #1f2937;
@@ -92,6 +79,7 @@ ul {
 .buttons {
   display: flex;
   justify-content: center;
+  gap:30px
 }
 
 .footer {
@@ -102,4 +90,15 @@ ul {
   padding-right: 40px;
   padding-bottom: 20px;
   padding-left: 40px;
+}
+#reset,#change-size{
+  background-color: rgb(253, 193, 82);
+  color: #1f2937;
+  border-color: rgb(253, 193, 82);
+  border-radius: 10px;
+  border-style: solid;
+  width: 100px;
+  height: 35px;
+  justify-self: center;
+  margin-bottom: 20px;
 }
