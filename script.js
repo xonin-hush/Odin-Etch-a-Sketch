@@ -2,7 +2,7 @@ const container = document.querySelector('#container');
 container.classList.add('grid-container')
 const sizeButton = document.querySelector('#change-size')
 let itemNum = getResolution()
-let CURRENT_COLOR_MODE = 'white';
+let CURRENT_COLOR_MODE = 'default';
 createGrid(itemNum)
 
 function createGrid(itemNum) {
@@ -18,15 +18,12 @@ function createGrid(itemNum) {
         container.appendChild(gridItem)
         colorMode(gridItem)
 
-        // gridItem.addEventListener('mouseover', () => {
-        //     gridItem.classList.remove('color-dark-blue')
-        //     gridItem.classList.add('color-sky-blue');
-        //     /*if button random is pressed 
-        //     add class (random) to the grid items that are hovered over */
-        // });
     }
 }
-
+function doStuff() {
+    console.log("hello!");
+}
+setInterval(doStuff, 5000);
 
 function getResolution() {
     size = prompt("Please enter number of squares on each side", 16)
@@ -45,16 +42,16 @@ function resetColor() {
 
 function colorMode(gridItem) {
 
-    if (CURRENT_COLOR_MODE == 'white') {
+    if (CURRENT_COLOR_MODE == 'default') {
         gridItem.addEventListener('mouseover', () => {
             if (CURRENT_COLOR_MODE == 'random') {
                 gridItem.classList.remove('color-dark-blue')
                 gridItem.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
-                //gridItem.style.border = solid 1px rgb(65, 21, 21)
+                gridItem.style.border = `thin solid rgb(65, 21, 21)`
+                gridItem.style.boxSizing = `border-box`
             }
             else {
-                console.log("gridItem `white` eventlistener called!")
-                console.log({ CURRENT_COLOR_MODE });
+                gridItem.style.removeProperty('background-color');
                 gridItem.classList.remove('color-dark-blue')
                 gridItem.classList.add('color-sky-blue');
             }
@@ -66,6 +63,6 @@ function colorMode(gridItem) {
 function changeColor(color) {
     click = color;
     CURRENT_COLOR_MODE = click
-    
+
 }
 
