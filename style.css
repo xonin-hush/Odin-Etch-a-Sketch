@@ -104,6 +104,10 @@ button{
   justify-self: center;
   margin-bottom: 20px;
 }
+button:hover {
+  background-color: rgb(151, 114, 45);
+  border-color:rgb(151, 114, 45);
+}
 .color-white {
   border-color: black;
   border: solid 1px rgb(65, 21, 21);
