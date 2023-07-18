@@ -37,7 +37,8 @@ function getResolution() {
 
 function resetColor() {
     gridItems = document.querySelectorAll('#grid-item')
-    gridItems.forEach((gridItem) => gridItem.classList.add('color-dark-blue'))
+    gridItems.forEach((gridItem) => {gridItem.style.removeProperty('background-color')
+        gridItem.classList.add('color-dark-blue')})
 }
 
 function colorMode(gridItem) {
