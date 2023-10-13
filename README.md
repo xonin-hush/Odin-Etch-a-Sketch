@@ -2,7 +2,7 @@
 This is a project that demonstrates some DOM methods in javascript that is supposed to show or test some skills/lessons demonstrated at "HTML Foundations" (DOMS and methods) at [The Odin Project](https://theodinproject.com).
 
 ## Links
-[Visit website](demonstrates)
+[Visit website](https://xonin-hush.github.io/Odin-Etch-a-Sketch/)
 
 ## Technologies used
 ![HTML5](https://img.shields.io/badge/html5-E34F26.svg?style=for-the-badge&logo=html5&logoColor=FFF)
